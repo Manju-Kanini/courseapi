@@ -93,7 +93,7 @@ namespace API9.Controllers
 
 
         [HttpGet]
-        [Route("get courses")]
+        [Route("getCourses")]
 
         public ActionResult GetCourses()
         {
@@ -116,7 +116,7 @@ namespace API9.Controllers
 
 
         [HttpPost]
-        [Route("Add Courses")]
+        [Route("addCourses")]
 
         public ActionResult InsertCourses(Course_Details C)
         {
@@ -137,7 +137,7 @@ namespace API9.Controllers
 
 
         [HttpPut]
-        [Route("update Course")]
+        [Route("updateCourse")]
         public IActionResult UpdateAdmin(Course_Details C)
         {
             
@@ -161,7 +161,7 @@ namespace API9.Controllers
         }
 
         [HttpDelete]
-        [Route("delete Courses")]
+        [Route("deleteCourse")]
 
         public IActionResult DeleteCourses(int Id)
         {
